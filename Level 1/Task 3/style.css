@@ -1,0 +1,98 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: #005555;
+}
+.container{
+    background: #007777;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(255,255,255,0.1),-5px -5px 15px rgba(0,0,0,0.2);
+
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    color:#f7f7f7;
+    margin: 20px;
+}
+.celsius,.kelvin,.fahrenheit{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.celsius label,
+.fahrenheit label,
+.kelvin label
+{
+    color:#f7f7f7;
+    font-size: 20px;
+
+}
+.celsius input[type='number']{
+    width: 100%;
+    height: 40px;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color:#333;
+    background: #f7f7f7;
+    text-align: center;
+}
+.fahrenheit input[type='number']{
+    width:100%;
+    height: 40px;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color:#333;
+    background: #f7f7f7;
+    text-align: center;
+}
+.kelvin input[type='number']{
+    width: 100%;
+    height: 40px;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color:#333;
+    background: #f7f7f7;
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    padding:10px 30px 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    background: rgba(0,0,0,0.6);
+    color:#f7f7f7;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+}

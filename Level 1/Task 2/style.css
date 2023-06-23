@@ -1,0 +1,494 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ######################## Navbar Styling ############################### */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding:20px;
+    border-bottom:2px solid black ;
+}
+.navbar h1{
+    font-size: 25px;
+    font-weight: 700;
+    color:rgb(33, 28, 28);
+}
+.navbar h1 span{
+    color:red;
+}
+.navbar .nav-items{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.nav-items li{
+    list-style: none;
+}
+.nav-items li a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-items li a:hover{
+    color:#15d4ab;
+    font-weight: 700;
+}
+
+#home{
+    width:100%;
+    height: 500px;
+    margin-top: 10px; 
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/bg.jpg'); 
+    background-position: center; 
+    background-size: cover;
+}
+.showcase{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+.left-section{
+    margin: 5px;
+    position: absolute;
+    top:150px;
+    left:100px;
+    width: 50%;
+}
+.left-section h4{
+    font-size: 30px;
+    font-weight: 700;
+    color:red;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.left-section p{
+    font-size: 25px;
+    color:#f7f7f7;
+    margin: -10px;
+    padding: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.right-section{
+    margin:5px;
+    width:50%;
+}
+
+.right-section .sahil{
+    position: absolute;
+    right:90px;
+    top:120px;
+    bottom: 10px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #ffff;
+    box-shadow: 2px 2px 3px #ffff;
+}
+/* About Section Styling */
+#about{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-top:20px;
+    width:90vw;
+    height: 300px;
+    background: #f7f7f7;
+}
+.about-container{
+    box-shadow: 8px 8px 15px rgba(255,255,255,.1),-8px -8px  15px rgba(0,0,0,0.2);
+    text-align: justify;
+    background: #ffff;
+    letter-spacing: 0.00002em;
+    border-radius: 30px;
+}
+.about-container h1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight:800;
+    letter-spacing: 0.2em;
+    color:rgb(60, 58, 58);
+}
+
+.educational-about{
+    padding: 20px;
+    margin: 20px;
+}
+.educational-about li{
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    color:rgb(34, 33, 33);
+}
+/* Skiil Section Styling  */
+#skill{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    width:90%;
+    height: 400px;
+    background: #ffff;
+    border-radius: 30px;
+    box-shadow: 8px 8px 15px rgba(255,255,255,.1) ,-8px -8px 15px rgba(0,0,0,0.2);
+}
+.skill-section h1{
+    color:rgb(60, 58, 58);
+    letter-spacing: 0.2em;
+}
+.skill-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.objective-about p{
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 500;
+    color:rgb(73, 71, 71);
+}
+.img img{
+    height: 100px;
+}
+/* contact section  styling*/ 
+#contact{
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    width:90%;
+    height: 650px;
+    background: #f7f7f7;
+    box-shadow: 8px 8px 15px rgba(255,255,255,.1) ,-8px -8px 15px rgba(0,0,0,0.2);
+}
+#contact h1{
+    color:rgb(60, 58, 58);
+    letter-spacing: 0.2em;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left-contact{
+    width:45%;
+    height: 100px;
+    background: #ffff;
+    box-shadow: 8px 8px 15px rgba(255,255,255,0.1),-8px -8px 15px rgba(0,0,0,0.1);
+}
+.left-contact img{
+    width:100%;
+    height: 100%;
+    height: 500px;
+}
+.right-contact{
+    width:50%;
+    padding-left: 20px;
+    box-shadow: 8px 8px 15px rgba(255,255,255,0.1),-8px -8px 15px rgba(0,0,0,0.1);
+}
+.right-contact form{
+    width:80%;
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.right-contact form label{
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    color:rgb(42, 43, 43);
+    font-weight: 500;
+}
+.right-contact form input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    outline:none;
+    box-shadow: 3px 3px 5px rgba(30, 29, 29, 0.2);
+    background: #f3f1f2;
+    color:#2c2c2d;
+    font-size: 16px;
+    font-weight: 5*00;
+}
+.right-contact form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    outline:none;
+    box-shadow: 3px 3px 5px rgba(30, 29, 29, 0.2);
+    background: #f3f1f2;
+    color:#2c2c2d;
+    font-size: 16px;
+    font-weight: 500;
+}
+.right-contact form label:after{
+    content: '*';
+    color:red;
+    margin-left:2px;
+}
+.right-contact form button{
+    background: #15d4ab;
+    color:#f7f7f7;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: left;
+    width:40%;
+    padding:10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.right-contact form button:hover{
+    background: #ffff;
+    color:#15d4ab;
+    border: 2px solid #15d4ab;
+}
+/* footer section styling */
+footer{
+    text-align: center;
+    color:black;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    margin: 20px;
+}
+footer a{
+    color:black;
+    margin-left: 2px;
+}
+@media screen and (max-width: 400px){
+  .navbar{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar .nav-items{
+    gap:5px;
+  }
+  #home{
+    width: 100%;
+    height: 800px;
+}.showcase{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.left-section{
+    position: absolute;
+    top:50px;
+    text-align: center;
+    width:70%;
+}
+.left-section h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.left-section p{
+    margin-top: -20px;
+    font-size: 16px;
+}
+.right-section{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:150px;
+    bottom:0;
+    left:220px;
+}
+#about{
+    width:100vw;
+}
+#skill{
+    margin-top: 200px;
+    height: 1400px;
+    width:100vw;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+.skill-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+.objective-about{
+    text-align: justify;
+    font-size: 16px;
+}
+#contact{
+    height: 1200px;
+    width: 90vw;
+    margin-right: 20px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+.left-contact{
+    width:100%;
+    height: 500px;
+}
+.right-contact{
+    width: 100%;
+    margin-top: 30px;
+    height: 400px;
+}
+.right-contact form input{
+    width:100%;
+}
+.right-contact form button{
+    font-size: 14px;
+    width:60%;
+}
+footer{
+    margin-top: 30px;
+}
+}
+@media screen and (min-width:401px) and (max-width: 768px) {
+    #home{
+        width: 100%;
+        height: 800px;
+    }
+    .showcase{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .left-section{
+        position: absolute;
+        top:50px;
+        text-align: center;
+        width:70%;
+    }
+    .left-section h4{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .left-section p{
+        margin-top: -20px;
+        font-size: 16px;
+    }
+    .right-section{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top:150px;
+        bottom:0;
+    }
+    .educational-about li{
+        text-align: justify;
+    }
+    #skill{
+        height: 900px;
+    }
+    .skill-container{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+    .objective-about{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .contact-container{
+        display: block;
+        padding: 20px;
+    }
+    #contact{
+        height: 1200px;
+    }
+    .left-contact{
+        width:95%;
+        height: 500px;
+    }
+    .right-contact{
+        width: 95%;
+        margin-top: 30px;
+        height: 400px;
+    }
+    .right-contact form input{
+        width:100%;
+    }
+    .right-contact form button{
+        font-size: 16px;
+        width:50%;
+    }
+    footer{
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .educational-about li{
+        text-align: justify;
+    }
+    #skill{
+        height: 700px;
+    }
+    .skill-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    }
+    .objective-about{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        padding: 20px;
+    }
+    #contact{
+        height: 700px;
+    }
+    .right-contact form button{
+        font-size: 16px;
+        width:55%;
+    }
+}
+@media screen and (min-width:1025px) and (max-width: 1440px) {
+    .educational-about li{
+        text-align: justify;
+    }
+    #skill{
+        height: 600px;
+    }
+    .skill-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    }
+    .objective-about{
+        text-align: justify;
+        font-size: 16px;
+    }
+}
